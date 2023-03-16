@@ -87,17 +87,25 @@ Nav ul li a:hover{
 }
 .frontpage{
 	color: floralwhite;
-	margin: 20px 0px -20px 0px;
+	margin: 10px 0px -20px 0px;
 	font-size: 95px;
+}
+.coming-soon{
+	color: #fff;
+	font-size: 120px;
+	text-align: center;
+	position: center;
+	margin-top: 250px;
 }
 h1{
 	color: #000000;
 	margin: 20px 0px -20px 0px;
-	font-size: 95px;
+	font-size: 110px;
 }
 h2{
 	color: #000000;
-	line-height: 48px;
+	line-height: 45px;
+	font-size: 21px;
 }
 h3{
 	color: floralwhite;
@@ -122,7 +130,17 @@ h5{
 	letter-spacing: 2px;
 	font-size: 20px;
 }
-
+.about-us-lecturers{
+	margin-top: 50px;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	line-height: 23px;
+	color: floralwhite;
+}
+span2{
+	color: #F39B14;
+}
 
 
 									/*  "index-minglemore" page's specific css */
@@ -162,6 +180,9 @@ h5{
 	width: 100%;
 	padding: 100%px 0px;
 	background: linear-gradient(130deg, #CBBDB2 20%, #FFFFFF);
+	background-image: url("../images/bracelet/Purple-cropped.png");
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(241,234,230,0.5);
 }
 .about img{
 	height: auto;
@@ -249,7 +270,7 @@ button:hover{
  	position: fixed;
  	width: 100%;
  	min-height: 78vh;
-	margin-top: -100px;
+	margin-top: -200px;
  	padding: 2rem;
 	overflow: hidden;
   	display: flex;
@@ -263,7 +284,7 @@ button:hover{
 	background-position: center bottom -60px;
 }
 .members-team h1{
-	margin-top: 140px;
+	margin-top: 100px;
 	text-align: center;
 	font-color: floralwhite;
 }
@@ -438,7 +459,7 @@ section .about-us-card .about-us-image img{
 	z-index: 1000;
 	overflow: hidden;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr); /* I have googled this error and apparently dreamweaver does not understand the tern FR which places columns next to each other, but majority of the responses said to ignore it as it does not affect the final quality. */
+	grid-template-columns: repeat(2, 1fr); /* I have googled this error and apparently dreamweaver does not understand the tern FR which places two columns next to each other, but majority of the responses said to ignore it as it does not affect the final quality. You can read about it in this forum: https://community.adobe.com/t5/dreamweaver-discussions/can-t-use-the-css-fr-unit-on-dreamweaver-unexpected-token-1fr-at-line-251-col8/td-p/10735795*/
 }
 .contact-form {
   	background-color: #5B25A6;
@@ -630,11 +651,10 @@ textarea.contact-input {
   display: flex;
   margin-top: 0.5rem;
 }
-.contact-social-icons a {
+.social-media-icon {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #F5F0FB, #B78225);
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -643,7 +663,7 @@ textarea.contact-input {
 }
 
 
-.contact-social-icons a:hover {
+.social-media-icon hover{
   transform: scale(1.05);
 }
 
